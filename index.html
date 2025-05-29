@@ -108,6 +108,27 @@
   </header>
   <main>
     <section>
+  <h2>Luxury Booking Form</h2>
+  <form id="booking-form">
+    <label for="client-name">Name:</label><br>
+    <input type="text" id="client-name" name="client-name" required><br><br>
+
+    <label for="client-phone">Phone:</label><br>
+    <input type="tel" id="client-phone" name="client-phone" required><br><br>
+
+    <label for="service">Select Service:</label><br>
+    <select id="service" name="service" required>
+      <option value="vip">1-Hour VIP - $75</option>
+      <option value="diamond">2-Hour Diamond - $150</option>
+      <option value="overnight">Overnight Luxury - $350</option>
+    </select><br><br>
+
+    <button type="submit" class="btn">Request Booking</button>
+  </form>
+
+  <div id="booking-result" style="margin-top: 2em;"></div>
+    </section>
+    <section>
       <h2>Book Time with Too_FlyyBunni</h2>
       <p>Located in Atlanta, GA | Call/Text: 678-913-7176 | Available for couples too!</p>
       <p>Bookings require a deposit of half the service fee via Cash App: <span class="pay-link">$tooflyybunni</span></p>
