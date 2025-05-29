@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="style.css" />
-<script src="script.js" defer></script>
+  <script src="script.js" defer></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Official 21+ site for Too_FlyyBunni – Slattland Records adult entertainer, companion, and VIP model in Atlanta, GA." />
@@ -87,6 +87,25 @@
       border: none;
       border-radius: 10px;
     }
+    .gallery-section {
+      margin-top: 2em;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 280px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 12px #ff69b4, 0 0 10px #fff;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
   </style>
   <script>
     window.onload = function () {
@@ -108,31 +127,29 @@
   </header>
   <main>
     <section>
-  <h2>Luxury Booking Form</h2>
-  <form id="booking-form">
-    <label for="client-name">Name:</label><br>
-    <input type="text" id="client-name" name="client-name" required><br><br>
-
-    <label for="client-phone">Phone:</label><br>
-    <input type="tel" id="client-phone" name="client-phone" required><br><br>
-
-    <label for="service">Select Service:</label><br>
-    <select id="service" name="service" required>
-      <option value="vip">1-Hour VIP - $75</option>
-      <option value="diamond">2-Hour Diamond - $150</option>
-      <option value="overnight">Overnight Luxury - $350</option>
-    </select><br><br>
-
-    <button type="submit" class="btn">Request Booking</button>
-  </form>
-
-  <div id="booking-result" style="margin-top: 2em;"></div>
+      <h2>Luxury Booking Form</h2>
+      <form id="booking-form">
+        <label for="client-name">Name:</label><br>
+        <input type="text" id="client-name" name="client-name" required><br><br>
+        <label for="client-phone">Phone:</label><br>
+        <input type="tel" id="client-phone" name="client-phone" required><br><br>
+        <label for="service">Select Service:</label><br>
+        <select id="service" name="service" required>
+          <option value="vip">1-Hour VIP - $75</option>
+          <option value="diamond">2-Hour Diamond - $150</option>
+          <option value="overnight">Overnight Luxury - $350</option>
+        </select><br><br>
+        <button type="submit" class="btn">Request Booking</button>
+      </form>
+      <div id="booking-result" style="margin-top: 2em;"></div>
     </section>
+
     <section>
       <h2>Book Time with Too_FlyyBunni</h2>
       <p>Located in Atlanta, GA | Call/Text: 678-913-7176 | Available for couples too!</p>
       <p>Bookings require a deposit of half the service fee via Cash App: <span class="pay-link">$tooflyybunni</span></p>
     </section>
+
     <section>
       <div class="service-card">
         <h3>1-Hour VIP Companionship</h3>
@@ -147,14 +164,26 @@
         <p>$350 – Full night of VIP attention, pleasure, and intimacy with discretion guaranteed.</p>
       </div>
     </section>
+
+    <section class="gallery-section">
+      <h2>Photo Gallery</h2>
+      <div class="gallery">
+        <img src="PXL_20250529_153714304.jpg" alt="Too_FlyyBunni Pose 1">
+        <img src="PXL_20250529_153754174.jpg" alt="Too_FlyyBunni Pose 2">
+        <img src="Picsart_25-05-29_15-22-39-213.jpg" alt="Too_FlyyBunni Glam Shot">
+      </div>
+    </section>
+
     <section class="calendar">
       <h2>Booking Calendar</h2>
       <iframe src="https://calendar.google.com/calendar/embed?src=yourcalendarlink" loading="lazy"></iframe>
     </section>
+
     <section>
       <h2>Now Playing</h2>
       <iframe src="https://www.youtube.com/embed/_VdKiaiYi4Q?autoplay=1&mute=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </section>
+
     <div class="disclaimer">
       <p>All services are legal and professional. No illegal activity is promoted or tolerated.</p>
     </div>
