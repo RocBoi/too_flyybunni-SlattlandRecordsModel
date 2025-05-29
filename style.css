@@ -103,3 +103,143 @@ iframe {
   border-radius: 10px;
   background: #000;
 }
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url("too_flyybunni-SlattlandRecordsModelScreenshot_20250529-122330.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #ff69b4;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background: linear-gradient(45deg, #000000aa, #ff69b4aa);
+  color: #ffffff;
+  text-align: center;
+  padding: 1em 0;
+  animation: flicker 3s infinite;
+  text-shadow: 0 0 5px #ff69b4;
+}
+
+main {
+  padding: 2em;
+  max-width: 900px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 16px;
+  box-shadow: 0 0 25px #000000cc;
+}
+
+h1, h2, h3 {
+  color: #ffd700;
+  text-shadow: 0 0 8px #ffffff;
+}
+
+label, select, input, textarea {
+  font-size: 1rem;
+  color: #fff;
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 0.6em;
+  border-radius: 10px;
+  border: 1px solid #ff69b4;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.service-card {
+  background: #1a1a1a;
+  border: 2px solid #c0c0c0;
+  padding: 1.2em;
+  border-radius: 14px;
+  margin-bottom: 1.5em;
+  box-shadow: 0 0 10px #ff69b4, 0 0 20px #c0c0c0;
+}
+
+.service-card h3 {
+  margin: 0 0 0.5em 0;
+  color: #ff69b4;
+}
+
+.pay-link {
+  color: #ffd700;
+  font-weight: bold;
+  background-color: #000;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+}
+
+.btn {
+  background: linear-gradient(90deg, #ff69b4, #ffd700);
+  color: #000000;
+  border: none;
+  padding: 0.8em 1.4em;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 0 10px #ff69b4, 0 0 15px #c0c0c0;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #ffd700, #ff69b4);
+  transform: scale(1.05);
+}
+
+.disclaimer {
+  font-size: 0.9em;
+  color: #ccc;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.calendar {
+  background: #111;
+  padding: 1em;
+  border-radius: 12px;
+  margin-top: 2em;
+  border: 1px solid #ff69b4;
+  box-shadow: 0 0 12px #ffd700;
+}
+
+iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 10px;
+}
+
+.gallery-section {
+  margin-top: 2em;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 280px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 16px #ff69b4, 0 0 10px #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 22px #ffd700, 0 0 14px #ff69b4;
+  }
