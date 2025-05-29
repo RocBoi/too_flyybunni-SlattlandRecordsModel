@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://rocboi.github.io/too_flyybunni-SlattlandRecordsModel/sitemap.xml
