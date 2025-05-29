@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,16 +13,9 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: url('Screenshot_20250529-122330.png') no-repeat center center fixed;
-      background-size: cover;
+      background: #000000;
       color: #ff69b4;
-    }
-
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.7);
-      min-height: 100vh;
+      margin: 0;
       padding: 0;
     }
 
@@ -44,23 +38,46 @@
       text-shadow: 0 0 8px #ffffff;
     }
 
-    .service-card {
+    .service-card, .payment-info, .contact-info, .form-section {
       background: #1a1a1a;
-      border: 2px solid #c0c0c0;
-      padding: 1em;
       border-radius: 12px;
-      margin-bottom: 1.5em;
+      margin-bottom: 2em;
+      padding: 1.2em;
       box-shadow: 0 0 10px #ff69b4, 0 0 20px #c0c0c0;
     }
 
-    .service-card h3 {
-      margin: 0 0 0.5em 0;
-      color: #ff69b4;
+    .service-card {
+      border: 2px solid #c0c0c0;
     }
 
-    .pay-link {
+    .payment-info {
+      border: 2px dashed #ffd700;
+      text-align: center;
+    }
+
+    .contact-info {
+      border: 2px solid #ff69b4;
+      text-align: center;
+    }
+
+    .form-section {
+      border: 2px solid #ffd700;
+    }
+
+    label {
+      display: block;
+      margin: 0.5em 0 0.2em;
       color: #ffd700;
-      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.7em;
+      border-radius: 8px;
+      border: none;
+      margin-bottom: 1em;
+      background: #333;
+      color: #fff;
     }
 
     .btn {
@@ -78,60 +95,73 @@
     .disclaimer {
       font-size: 0.9em;
       color: #ccc;
-      margin-top: 2em;
       text-align: center;
-    }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1em;
       margin-top: 2em;
-    }
-
-    .gallery img {
-      width: 200px;
-      height: auto;
-      border: 3px solid #ff69b4;
-      border-radius: 12px;
-      box-shadow: 0 0 15px #ffd700;
-      transition: transform 0.3s;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <header>
-      <h1>Too_FlyyBunni</h1>
-      <p>Slattland Records VIP Model & Personal Companion</p>
-    </header>
+  <header>
+    <h1>Too_FlyyBunni</h1>
+    <p>Slattland Records VIP Model & Personal Companion</p>
+  </header>
 
-    <main>
-      <section>
-        <h2>Book Time with Too_FlyyBunni</h2>
-        <p>Experience an unforgettable moment with a certified entertainer and companion. All sessions are discreet and professional.</p>
-      </section>
+  <main>
+    <section>
+      <h2>Book Time with Too_FlyyBunni</h2>
+      <p>Experience an unforgettable moment with a certified entertainer and companion. All sessions are discreet and professional.</p>
+    </section>
 
-      <section>
-        <div class="service-card">
-          <h3>1-Hour VIP Companionship</h3>
-          <p>$150 – Includes private conversation, chill vibes, and relaxing atmosphere in a safe space.</p>
-        </div>
-        <div class="service-card">
-          <h3>2-Hour Diamond Session</h3>
-          <p>$250 – Exclusive one-on-one time, personal undivided attention, and upscale experience.</p>
-        </div>
-      </section>
-    </main>
+    <section class="service-card">
+      <h3>1-Hour VIP Companionship</h3>
+      <p>$150 – Includes private conversation, chill vibes, and relaxing atmosphere in a safe space.</p>
+    </section>
 
-    <footer>
-      <p>&copy; 2025 Too_FlyyBunni | Slattland Records</p>
-    </footer>
-  </div>
+    <section class="service-card">
+      <h3>2-Hour Diamond Session</h3>
+      <p>$250 – Exclusive one-on-one time, personal undivided attention, and upscale experience.</p>
+    </section>
+
+    <section class="payment-info">
+      <h3>Secure Your Session</h3>
+      <p>Send payment via <strong>Cash App</strong> to:</p>
+      <p><strong>$TooFlyyBunni</strong></p>
+      <p>Please include your name & desired booking time in the memo.</p>
+      <p>All payments are final and non-refundable.</p>
+    </section>
+
+    <section class="contact-info">
+      <h3>Contact & Location</h3>
+      <p><strong>Phone:</strong> <a href="tel:6789137176" style="color:#ffd700;">678-913-7176</a></p>
+      <p><strong>Located in:</strong> Atlanta, GA</p>
+      <p><strong>Now Available:</strong> For Couples Too!</p>
+      <a class="btn" href="TooFlyyBunni.vcf" download>Save Contact</a>
+    </section>
+
+    <section class="form-section">
+      <h3>Request a Booking</h3>
+      <form action="mailto:tooflyybunni@gmail.com" method="POST" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="Phone" required />
+
+        <label for="date">Preferred Date/Time:</label>
+        <input type="text" id="date" name="DateTime" placeholder="e.g., Friday 9 PM" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="Message" rows="4"></textarea>
+
+        <button type="submit" class="btn">Send Request</button>
+      </form>
+    </section>
+
+    <p class="disclaimer">This site is for entertainment purposes only. You must be 21+ to interact or book.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Too_FlyyBunni | Powered by Slattland Records</p>
+  </footer>
 </body>
 </html>
